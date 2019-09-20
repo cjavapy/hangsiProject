@@ -1,0 +1,76 @@
+<!-- pages/continuousScan/index.wxml -->
+<view class="container">
+  <view class="searchContainer">
+    <view class="searchContainerLeft">
+      <view class="formItem">
+        <view>
+          <text>设备编号：</text>
+          <input type="text" placeholder="请输入设备编号"></input>
+        </view>
+        <view>
+          <text>设备名称：</text>
+          <input type="text" placeholder="请输入设备名称"></input>
+        </view>
+        <view>
+          <text>维修时间：</text>
+          <picker mode="date" value="{{startDate}}" bindchange="bindStartDateChange">
+            <view class="picker" wx:if="{{startDate==''}}">开始时间</view>
+            <view class="picker" wx:else>{{startDate}}</view>
+          </picker>
+          <view class="pickerLine">-
+            
+          </view>
+          <picker mode="date" value="{{endDate}}" bindchange="bindEndDateChange">
+            <view class="picker" wx:if="{{endDate==''}}">结束时间</view>
+            <view class="picker" wx:else>{{endDate}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="searchContainerRight">
+      <view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{searchType}}" wx:key="index">
+            <radio value="{{item.value}}" checked="{{item.checked}}" color='#fff' />
+            {{item.name}}
+          </label>
+        </radio-group>
+      </view>
+       <view class="btn searchBtn">查询</view>
+    </view>
+  </view>
+  <scroll-view scroll-y bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}" class="scroll" style="height:{{scrollHeight}}px">
+    <view class="machItem" wx:for="{{machList}}" wx:key="index" bindtap="toDetail" data-index="{{index}}">
+      <!-- {{index}}: {{item.machCode}} -->
+      <view class="machItemImg" wx:if="{{item.imgSrc!=''}}">
+        <image src="{{item.imgSrc}}" alt=""></image>
+      </view>
+       <view class="machItemImg" wx:if="{{item.imgSrc==''}}">
+        <image src="../../../images/noimage.jpg" alt=""></image>
+      </view>
+      <view class="machItemInfo" >
+        <view>
+          <text>设备类型：{{item.machType}}</text>
+        </view>
+        <view>
+          <text>设备条码：{{item.machCode}}</text>
+        </view>
+        <view>
+          <text>使用部门：{{item.department}}</text>
+        </view>
+       <view>
+          <text>报修时间：{{item.repairDate}}</text>
+        </view>
+        <view>
+          <text>报修说明：{{item.dec}}</text>
+        </view>
+      </view>
+      <view class="machItemBtn"></view>
+      <view class="clear"></view>
+    </view>
+  </scroll-view>
+  <!-- <view class="btn">
+    <view class="goBack" bindtap="goBack">返回</view>
+    <view class="makeSure" bindtap="makeSure">确定</view>
+  </view> -->
+</view>

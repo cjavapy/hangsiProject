@@ -1,0 +1,8 @@
+<!--pages/continuousScan/index.wxml-->
+<view class="container">
+  <camera mode="scanCode" device-position="back" binderror="error" bindscancode="takeCode" scan-area="[0,0,200, 200]"></camera>
+  <view >扫描机器信息:{{scanInfo}}</view>
+  <view class="btn">
+    <view class="goBack" bindtap="goBack">返回</view>
+  </view>
+</view>

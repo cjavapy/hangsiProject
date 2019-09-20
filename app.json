@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/index/index",
+        "pages/repairRecord/index/index",
+        "pages/machList/index/index",
+        "pages/scan/index",
+        "pages/scanSuccess/index",
+        "pages/inventory/index",
+        "pages/continuousScan/index",
+        "pages/logs/logs",
+        "pages/repairRecord/repairDetail/index",
+        "pages/lendRecord/index/index",
+        "pages/lendRecord/lendDetail/index",
+        "pages/equipmentList/index"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#169BD5",
+        "list": [{
+                "pagePath": "pages/home/index/index",
+                "iconPath": "./images/home.png",
+                "selectedIconPath": "./images/home.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/repairRecord/index/index",
+                "iconPath": "./images/repair.png",
+                "selectedIconPath": "./images/repair.png",
+                "text": "报修记录"
+            },
+            {
+                "pagePath": "pages/lendRecord/index/index",
+                "iconPath": "./images/lend.png",
+                "selectedIconPath": "./images/lend.png",
+                "text": "借出记录"
+            },
+            {
+                "pagePath": "pages/equipmentList/index",
+                "iconPath": "./images/equipmentList.png",
+                "selectedIconPath": "./images/equipmentList.png",
+                "text": "设备台账与盘点"
+            }
+        ]
+    }
+}

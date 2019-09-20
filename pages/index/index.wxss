@@ -1,0 +1,97 @@
+page {
+    background: #fff;
+}
+
+.container {
+    padding: 200rpx 0 50rpx 0;
+    background: no-repeat center -10%;
+    background-size: 100% auto;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.container_inner {
+    width: 520rpx;
+    background: rgba(255, 255, 255, .4);
+}
+
+.loginTxt {
+    font-size: 52rpx;
+    color: #00a4ea;
+    margin-bottom: 80rpx;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loginInput text {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+    line-height: 2;
+    margin-bottom: 10rpx;
+}
+
+.loginInput input {
+    font-size: 36rpx;
+    color: #333333;
+    height: 88rpx;
+    padding: 0 30rpx;
+    background: #F7F8FA;
+    margin-bottom: 40rpx;
+    border-radius: 16rpx;
+}
+
+.loginBtn {
+    width: 520rpx;
+    height: 88rpx;
+    background: #00a4ea;
+    border-radius: 16rpx;
+    font-size: 32rpx;
+    color: #fff;
+    margin-top: 60rpx;
+}
+
+.loginBottom {
+    text-align: center;
+    margin-top: 200rpx;
+}
+
+.loginBottom image {
+    width: 66rpx;
+    height: 66rpx;
+}
+
+.loginBottom text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+
+.shouquan_block {
+    position: fixed;
+    width: 70%;
+    padding: 40rpx 30rpx;
+    text-align: center;
+    background: #fff;
+    border-radius: 10rpx;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.shouquan_block .login_text {
+    font-size: 30rpx;
+    color: #333;
+}
+
+.shouquan_block button {
+    width: 300rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #fff;
+    background: #00a4ea;
+    margin-top: 30rpx;
+}

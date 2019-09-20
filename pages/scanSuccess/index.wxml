@@ -1,0 +1,29 @@
+<!--pages/scanSuccess/index.wxml-->
+<view class="wrap">
+  <view class="scanDetail">详细信息</view>
+  <view class="forList">
+    <view class="forli"><view><text class="left">日期</text></view><text>2019-01-09</text></view>
+    <view class="forli"><view><text class="left">部门</text></view><text>IE部门-智能车间组</text></view>
+    <view class="forli"><view><text class="left">名称</text></view><text>主机</text></view>
+    <view class="forli"><view><text class="left">批号</text></view><text>批号批号批号批号批号批号</text></view>
+  </view>
+  <view class="bottomFix"><view bindtap="toReport">报修</view><view>盘点</view><view>维修完成</view></view>
+  <view class="blackMoudel" wx:if="{{isReport}}"></view>
+  <view class="reportDetail" wx:if="{{isReport}}">
+    <view class="forList">
+      <view class="forli"><view><text>报修时间</text></view>
+        <picker mode="date" value="{{date}}" start="2019-09-05" end="2029-09-05" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+      <view class="forli"><view><text class="left">报修人</text></view><input type="text" /></view>
+      <view class="forli"><view><text class="left">保修原因</text></view><input type="text" /></view>
+    </view>
+    <view class="bottomBtn">
+      <view class="tocancle" class="left" bindtap="toCancle">取消</view>
+      <view class="toSure" bindtap="toSure">确定</view>
+    </view>
+  </view>
+</view>

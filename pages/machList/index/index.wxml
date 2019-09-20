@@ -1,0 +1,67 @@
+<!--pages/machList/index.wxml-->
+<scroll-view scroll-y   class="scroll" style="height:{{scrollHeight}}px">
+    <view class="machItem {{index==selectIndex?'active':''}}" data-index="{{index}}" wx:for="{{machList}}" wx:key="index"  bindtap="selectList" >
+      <!-- {{index}}: {{item.machCode}} -->
+      <view class="machItemImg">
+        <image src="{{item.imgSrc}}" alt="" wx:if="{{item.imgSrc!=''}}"></image>
+        <image src="../../../images/noimage.jpg" alt="" wx:else></image>
+      </view>
+      <view class="machItemInfo" >
+        <view>
+          <text>设备类型：{{item.machType}}</text>
+        </view>
+        <view>
+          <text>设备条码：{{item.machCode}}</text>
+        </view>
+        <view>
+          <text>设备批号：{{item.batch}}</text>
+        </view>
+       <view>
+          <text>所有部门：{{item.department}}</text>
+        </view>
+        <view wx:if="{{item.lendDate}}">
+          <text>借出时间：{{item.lendDate}}</text>
+        </view>
+      </view>
+      <view class="machItemBtn">
+        <image src="../../../images/delete.png" bindtap="delMach"/>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="btnGroup">
+      <view class="btn continueScan" bindtap="continueScan">扫码</view>
+      <view class="btn btnRepair" bindtap="repair">报修/维修</view>
+      <view class="btn btnLend" bindtap="lend">借出</view>
+      <view class="btn btnReturn">归还</view>
+  </view>
+
+
+<modal show="{{showRepairModal}}" height='40%' bindcancel="modalCancel" bindconfirm='repairModalConfirm'>
+    <textarea class="repairReason modalView"  bindinput='repairInput' placeholder="请填写报修原因/维修结果"></textarea> 
+</modal>
+<modal show="{{showLendModal}}" height='45%' bindcancel="modalCancel" bindconfirm='lendModalConfirm'>
+    <view class="modalView">
+        <view class="lendPart">
+            <text >借出部门：</text>
+            <!-- <view ><Select prop-array='{{selectArray}}'></Select></view> -->
+            <!-- <view ><input /></view> -->
+             <picker bindchange="pickChange" value="{{index}}" range="{{selectArray}}" range-key="value">
+                <input  value="{{selectPartName}}" placeholder="请选择部门" disabled="true"/>
+                <!-- <view >{{selectPartName}}</view> -->
+             </picker>
+        </view>
+         <view class="clear"></view>
+        <view class="lendCount lendPart">
+            <text >借出单价：</text>
+            <view ><input type="number"  placeholder="请输入单价"/></view>
+        </view>
+        <view class="clear"></view>
+        <view class="lendRemark lendPart">借出备注：
+            <textarea ></textarea>
+        </view>
+         <view class="clear"></view>
+    </view>
+</modal>
+<modal show="{{isShowDel}}" height='20%' bindcancel="modalCancel" bindconfirm='confirmDel'>
+    <view class="delText">确认删除吗？</view>
+</modal>

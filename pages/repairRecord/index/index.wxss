@@ -1,0 +1,134 @@
+/* pages/repairRecord/index.wxss */
+
+.scroll {
+    height: 600rpx;
+}
+
+.scroll view {
+    color: #333;
+}
+
+.btn {
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 30rpx;
+    margin-top: 10rpx;
+    margin-right: 25rpx;
+    border-radius: 10rpx
+}
+
+.searchBtn {
+    margin-top: 40rpx;
+    background: #00A4EA;
+    color: #fff
+}
+
+.searchContainerLeft {
+    width: 550rpx;
+    float: left;
+}
+
+.searchContainerRight {
+    width: 200rpx;
+    float: left;
+}
+
+.formItem {
+    margin-left: 20rpx;
+}
+
+.formItem text {
+    /* display: inline-block; */
+    float: left;
+    font-size: 28rpx;
+    color: #999999;
+    line-height: 2;
+    margin-bottom: 10rpx;
+}
+
+.formItem input,
+picker {
+    float: left;
+    width: 300rpx;
+    font-size: 26rpx;
+    color: #333333;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 30rpx;
+    background: #F7F8FA;
+    margin-bottom: 40rpx;
+    border-radius: 16rpx;
+}
+
+picker {
+    width: 136rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 10rpx;
+    color: #808080;
+}
+
+.pickerLine {
+    float: left;
+    height: 60rpx;
+    width: 20rpx;
+    line-height: 60rpx;
+    margin-left: 5rpx;
+}
+
+span {
+    float: left;
+    border: 0.5rpx solid black;
+    width: 100%;
+    height: 1rpx;
+    margin-top: 30rpx;
+}
+
+.radio {
+    display: block;
+    margin-top: 10rpx;
+}
+
+.machItem {
+    border: 1px solid #CCCCCC;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 2%;
+    background: #F7F8FA;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.machItemImg {
+    float: left;
+}
+
+.machItemImg image {
+    width: 150rpx;
+    height: 150rpx;
+    margin-top: 25rpx;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+
+.machItemInfo {
+    float: left;
+    width: 500rpx;
+    height: 200rpx;
+}
+
+.machItemInfo view {
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 500rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.machItemInfo text {
+    padding-left: 10rpx;
+    font-weight: blod;
+}

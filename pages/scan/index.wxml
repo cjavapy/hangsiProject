@@ -1,0 +1,5 @@
+<!--pages/scan/index.wxml-->
+<view class="container">
+  <image src="../../images/frj.jpg" class="scanImg" bindtap="scanCode"></image>
+  <text>请扫描您的机器</text>
+</view>

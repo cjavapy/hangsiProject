@@ -1,0 +1,63 @@
+/* pages/lendDetail/index.wxss */
+
+.machInfo {
+    display: flex;
+    height: 400rpx;
+    flex-direction: row;
+}
+
+.machImg {
+    height: 400rpx;
+    width: 290rpx;
+    margin-left: 10rpx;
+}
+
+.machDesc {
+    display: block;
+    height: 400rpx;
+    width: 430rpx;
+}
+
+.machDesc view {
+    line-height: 57rpx;
+    height: 57rpx;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+image {
+    height: 400rpx;
+    width: 290rpx
+}
+
+.repairReason {
+    width: 100%;
+    height: 480rpx;
+    border-top: 1px solid #000;
+}
+
+.repairReason>view {
+    margin: 20rpx 20rpx;
+    width: 710rpx;
+    height: 440rpx
+}
+
+.submitBtn {
+    width: 100%;
+    height: 80rpx;
+}
+
+.submitBtn>view {
+    width: 60%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-top: 40rpx;
+    background: #00A4EA;
+    color: #fff
+}

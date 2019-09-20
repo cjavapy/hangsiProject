@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container" style="background-image:url('../../images/bg.jpg');">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="container_inner">
+    <view class="loginTxt"><text>秒优服装供应链</text></view>
+    <view class="loginInput">
+      <view><text>用户名</text></view>
+      <input type="text" placeholder="请输入用户名" value="{{user.name}}" bindinput='usernameinput'></input>
+      <view><text>密码</text></view>
+      <input type="text" placeholder="请输入密码" value="{{user.password}}" bindinput='userpassinput'></input>
+    </view>
+    <button class="loginBtn" bindtap="login">登录</button>
+  </view>
+  <view class="loginBottom">
+    <image src="../../images/mulogo.png"></image>
+    <text>上海秒优供应链管理有限公司</text>
+  </view>
+  <!-- 需要使用 button 来授权登录 -->
+  <view class="black_block" wx:if="{{isShow}}"></view>
+  <view class='shouquan_block' wx:if="{{isShow}}">
+    <view><text class='login_text'>使用微信账号授权并登录</text></view>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="shouquan">授权登录</button>
+  </view>
+</view>

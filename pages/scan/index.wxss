@@ -1,0 +1,10 @@
+/* pages/scan/index.wxss */
+.scanImg{
+  width:300rpx;
+  height:300rpx;
+  margin:0 auto;
+}
+text{
+  font-size:30rpx;
+  color:#666;
+}

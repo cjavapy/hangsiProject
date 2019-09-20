@@ -1,0 +1,40 @@
+/* pages/continuousScan/index.wxss */
+camera{
+  width:70%;
+  height:400rpx;
+  margin:0 auto;
+}
+.scroll{
+  height:400rpx;
+  margin-top:50rpx;
+}
+.scroll view{
+  text-align: center;
+  font-size:30rpx;
+  line-height: 2;
+  color:#333;
+}
+.btn {
+  text-align: center;
+  padding:0 30rpx;
+  margin-top:50rpx;
+}
+.btn .makeSure{
+  width:320rpx;
+  font-size:30rpx;
+  line-height: 80rpx;
+  border-radius:10rpx;
+  background: #00a4ea;
+  color:#fff;
+  float: left;
+} 
+.btn .goBack{
+  width:320rpx;
+  font-size:30rpx;
+  line-height: 80rpx;
+  border-radius:10rpx;
+  background: #cccccc;
+  color:#fff;
+  float: left;
+  margin-right:50rpx;
+}

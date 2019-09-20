@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "设备列表",
+    "navigationBarBackgroundColor": "#00a4ea",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "modal": "/components/modal/index",
+        "Select": "/components/select/index"
+    }
+}

@@ -1,0 +1,169 @@
+/* pages/machList/index.wxss */
+
+.scroll {
+    height: 600rpx;
+    margin-top: 50rpx;
+}
+
+.select {
+    width: 100rpx;
+    height: 20rpx;
+    background: black
+}
+
+.machItem {
+    height: 200rpx;
+    border-top: 1px solid #808080;
+}
+
+.machItemImg {
+    float: left;
+    width: 150rpx;
+    height: 200rpx;
+}
+
+.machItemImg image {
+    width: 150rpx;
+    height: 200rpx;
+    margin-top: 5rpx;
+}
+
+.machItemInfo {
+    float: left;
+    width: 450rpx;
+    height: 200rpx;
+}
+
+.machItemInfo view {
+    width: 450rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+
+.machItemInfo text {
+    padding-left: 10rpx;
+    font-weight: blod;
+}
+
+.machItemBtn {
+    float: left;
+    height: 200rpx;
+    line-height: 235rpx;
+    width: 150rpx;
+    text-align: center;
+}
+
+.machItemBtn image {
+    width: 60rpx;
+    height: 70rpx;
+    margin-left: -15rpx;
+}
+
+.btnGroup {
+    width: 650rpx;
+    height: 260rpx;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 50rpx;
+}
+
+.continueScan {
+    width: 650rpx;
+}
+
+.btn {
+    margin-top: 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border: 1px solid #797979;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+}
+
+.btnRepair {
+    width: 260rpx;
+}
+
+.btnLend {
+    width: 180rpx;
+    margin-left: 10rpx
+}
+
+.btnReturn {
+    float: right;
+    width: 180rpx
+}
+
+.active {
+    background: #E0E0E0
+}
+
+.repairReason {
+    border: 1px solid #E0E0E0;
+}
+
+.modalView {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 5px;
+    position: relative;
+    top: 40rpx;
+}
+
+.lendPart {
+    position: relative;
+    top: 10rpx;
+}
+
+.lendPart>text {
+    float: left;
+    width: 80px;
+}
+
+.lendPart>view {
+    float: left;
+    width: 70%;
+}
+
+picker {
+    float: left;
+    width: 70%;
+}
+
+.lendPart {
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.lendPart input {
+    border: 1px solid #E0E0E0;
+    height: 60rpx;
+    padding-left: 5px;
+    width: 195px;
+}
+
+.lendCount {
+    top: 40rpx;
+}
+
+.lendRemark {
+    top: 40rpx;
+}
+
+.lendRemark textarea {
+    height: 100rpx;
+    width: 275px;
+}
+
+.delText {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 40rpx;
+}

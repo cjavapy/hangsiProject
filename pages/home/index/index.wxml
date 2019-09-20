@@ -1,0 +1,48 @@
+<!--pages/home/index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="userLeft">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view class="userRight">
+      <view >
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <view >
+        欢迎使用
+      </view>
+    </view>
+  </view>
+  <view class="typeList">
+    <view class="item" bindtap="toRepair">
+      <view class="circle">1</view>
+      待维修
+    </view>
+    <view class="item" bindtap ="toLend">
+      <view class="circle">2</view>
+    已借出</view>
+    <view class="item" bindtap="toEquipmentList">
+     <view class="circle">3</view>
+      使用中</view>
+  </view>
+  <view class="typeList">
+    <view class="item" >
+      <view class="circle">4</view>
+      待盘点
+    </view>
+    <view class="item">
+     <view class="circle ">11</view>
+    已盘点</view>
+    <view class="item " bindtap="startInventory" wx:if="{{!isInInventory}}">
+     <view class="circle startInventory">开始盘点</view>
+    </view>
+
+    <view class="item " bindtap="endInventory" wx:if="{{isInInventory}}">
+     <view class="circle endInventory">结束盘点</view> 
+    </view>
+
+  </view>
+  <view class="btn" bindtap="toMachList">
+    设备扫码
+  </view>
+</view>

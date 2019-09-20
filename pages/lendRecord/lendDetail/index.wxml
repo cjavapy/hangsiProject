@@ -1,0 +1,40 @@
+<!-- pages/lendDetail/index.wxml -->
+<view class="container">
+    <view class="machInfo">
+        <view class="machImg">
+            <image src="../../../images/frj.jpg"></image>
+        </view>
+        <view class="machDesc">
+            <view>
+                <text>设备类型：双针平车</text>
+            </view>
+            <view>  
+                <text>设备条码：040531001</text>
+            </view>
+            <view>
+                <text>设备批号：重机DDL-8700-7</text>
+            </view>
+            <view>
+                <text decode="true">供&ensp;应&ensp;商：BJ0008</text>
+            </view>
+            <view>
+                <text>设备价值：9750元</text>
+            </view>
+            <view>
+                <text>启用日期：2009-12-31</text>
+            </view>
+            <view>
+                <text>所有部门：锦业</text>
+            </view>
+        </view>
+    </view>
+    <view class="repairReason">
+        <view>
+            借出详细信息
+        </view>
+    </view>
+    
+    <view class="submitBtn">
+        <view bindtap="repairComplete">归还</view>
+    </view>
+</view>
